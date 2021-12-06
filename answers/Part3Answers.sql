@@ -10,4 +10,7 @@ SELECT trainerID, name FROM pokemon_trainer p_t LEFT JOIN pokemons p ON p_t.poke
 # How many pokemon have a secondary type Poison?
 SELECT COUNT(id) FROM pokemons WHERE secondary_type=7;
 
+# What are all the primary types and how many pokemon have that type?
+SELECT primary_type, COUNT(id) FROM pokemons GROUP BY primary_type;
+
 
