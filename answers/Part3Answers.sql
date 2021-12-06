@@ -13,4 +13,7 @@ SELECT COUNT(id) FROM pokemons WHERE secondary_type=7;
 # What are all the primary types and how many pokemon have that type?
 SELECT primary_type, COUNT(id) FROM pokemons GROUP BY primary_type;
 
+# For trainers with level 100 pokemon, how many level 100s does each have?
+SELECT p_t.trainerID, COUNT(*) FROM pokemon_trainer p_t WHERE p_t.pokelevel=100 GROUP BY p_t.trainerID;
+
 
