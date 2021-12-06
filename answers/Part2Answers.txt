@@ -6,3 +6,6 @@ SELECT * FROM pokemons WHERE id = 45;
 
 # How many pokemon are there?
 SELECT COUNT(id) FROM pokemons;
+
+# How many types are there?
+SELECT COUNT(name) FROM types;
